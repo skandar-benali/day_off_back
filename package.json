@@ -1,0 +1,30 @@
+{
+  "name": "day-off-back",
+  "version": "0.0.0",
+  "main": "src/server.js",
+  "author": "zahbollla",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node -r dotenv/config src/server.js",
+    "start": "babel-node -r dotenv/config src/server.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "apollo-server": "^2.19.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.4.0",
+    "graphql-tools": "^7.0.2",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1"
+  }
+}
