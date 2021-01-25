@@ -1,7 +1,7 @@
-const user = {
+const company = {
   queries: {},
   mutations: {},
   User: {}
 };
 
-export default user;
+export default company;

@@ -5,7 +5,7 @@ import typeDefs from "./typeDefs";
 import resolvers from "./resolvers";
 import dbConnect from "./db";
 
-const { NODE_ENV } = runtimeVars;
+const { NODE_ENV, PORT } = runtimeVars;
 
 const server = new ApolloServer({
   typeDefs,
@@ -16,7 +16,7 @@ const server = new ApolloServer({
 
 // The `listen` method launches a web server.
 server
-  .listen()
+  .listen(PORT)
   .then(async ({ url }) => {
     await dbConnect();
     console.log(`🚀  Server ready at ${url}`);

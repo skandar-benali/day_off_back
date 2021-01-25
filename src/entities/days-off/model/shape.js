@@ -1,12 +1,16 @@
-const UserSchema = {
-  email: { type: String, required: true, trim: true, toLowerCase: true },
-  firstName: { type: String },
-  lastName: { type: String },
-  hash: { type: String, required: true },
-  company: Number,
-  team: Number,
+const singleDayOff = {
+  day: { type: Number, min: 1, max: 31 },
+  month: { type: Number, min: 1, max: 12 },
+  year: { type: Number }
+};
+
+const dayOffSchema = {
+  user: { type: Number, required: true },
+  beginDate: { type: Number },
+  days: [singleDayOff],
+  type: { type: String, default: "", enum }
   createdAt: Number,
   updatedAt: Number
 };
 
-export default UserSchema;
+export default dayOffSchema;

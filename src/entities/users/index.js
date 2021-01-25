@@ -1,10 +1,7 @@
 import queries from "./queries";
 const user = {
   queries,
-  mutations: {},
-  User: {
-    firstName: () => "simpei"
-  }
+  mutations: {}
 };
 
 export default user;

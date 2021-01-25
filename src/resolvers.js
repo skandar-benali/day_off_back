@@ -32,7 +32,6 @@ const resolvers = () => {
     }
   });
 
-  console.log("interface=======>", interfaces);
   return interfaces;
 };
 

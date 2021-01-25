@@ -3,7 +3,14 @@ type Query {
 }
 
 type User {
-  email: String
   id: Int
+  email: String
   firstName: String
+  lastName: String
+  name: String
+  role: Int
+  avatar: String
+  language: String
+  company: Int
+  teams: Int
 }
